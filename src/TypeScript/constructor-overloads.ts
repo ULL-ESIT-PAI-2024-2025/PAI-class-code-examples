@@ -18,6 +18,7 @@ class Point1 {
   constructor(coordX = 0, coordY = 0) {
     this.coordX = coordX;
     this.coordY = coordY;
+    console.log(`Usual constructor. Point (${this.coordX}, ${this.coordY})`);
   }
 }
 
@@ -29,6 +30,15 @@ class Point2 {
   constructor(coordX: number, coordY: string);
   constructor(coord: string);
   constructor(coordX: any, coordY?: any) {
-    // TBD
+    this.coordX = 9;
+    this.coordY = 8;
+    console.log(`Overloaded constructor. Point (${this.coordX}, ${this.coordY})`);
   }
 }
+
+const main = () => {
+  let point1: Point1 = new Point1();
+  let point2: Point2 = new Point2('Pay attention');
+};
+
+main();
