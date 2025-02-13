@@ -7,10 +7,10 @@
   * @author F. de Sande
   * @since Feb 11, 2023
   * @desc TS classes. Constructor
-  *       the class TwitterProfile has 3 attributes and a constructor
+  *       the class BlueSkyProfile has 3 attributes and a constructor
   */
 
-class TwitterProfile {
+class BlueSkyProfile {
   name: string;
   followers: number;
   verified: boolean = false;
@@ -24,8 +24,8 @@ class TwitterProfile {
 }
 
 export let main = async () => {
-  let myProfile: TwitterProfile = new TwitterProfile ('Sande', 32, true);
-  console.log(myProfile.name + ' has ' + myProfile.followers + ' followers on Twitter!');
+  let myProfile: BlueSkyProfile = new BlueSkyProfile ('Sande', 32, true);
+  console.log(myProfile.name + ' has ' + myProfile.followers + ' followers on BlueSky!');
   console.log(myProfile.name + ' is verified: ' + myProfile.verified);
 };
 
