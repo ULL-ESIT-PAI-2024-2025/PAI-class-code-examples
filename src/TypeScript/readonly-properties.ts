@@ -26,7 +26,7 @@ class Greeter {
   }
 }
 
-export let main = async () => {
+export let main = () => {
   const myGreeter = new Greeter('Earth');
   myGreeter.name = 'also not ok';
 };
