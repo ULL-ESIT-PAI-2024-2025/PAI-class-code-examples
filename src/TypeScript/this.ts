@@ -18,6 +18,7 @@
 
 class Leaf {
   color: string = 'green';
+
   changeColor(season: string): void {
     console.log('original color: ' + this.color);
     switch(season) {
