@@ -44,7 +44,7 @@ class Person {
 }
 
 export let main = async () => {
-  const alan = new Person(102, 'Alan', 'Turing');
+  const alan = new Person(113, 'Alan', 'Turing');
   console.log(alan.getFullName(), ' is ', alan.getAge(), ' years old.');
 };
 
