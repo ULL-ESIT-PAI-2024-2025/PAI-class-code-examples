@@ -10,6 +10,10 @@
   */
 
 class Person {
+  private socialSecurityNumber: string;
+  private firstName: string;
+  private lastName: string;
+
   constructor(socialSecurityNumber: string, firstName: string, lastName: string) {
     this.socialSecurityNumber = socialSecurityNumber;
     this.firstName = firstName;
@@ -19,10 +23,6 @@ class Person {
   getFullName(): string {  // Default visibility is public
     return `${this.firstName} ${this.lastName}`; 
   }
-
-  private socialSecurityNumber: string;
-  private firstName: string;
-  private lastName: string;
 }
 
 export let main = async () => {
