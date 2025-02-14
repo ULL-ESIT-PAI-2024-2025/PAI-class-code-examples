@@ -9,7 +9,10 @@
   * @desc readonly properties
   *       Fields may be prefixed with the readonly modifier. 
   *       This prevents assignments to the field outside of the constructor.
-  *       if name is readonly this code produces an error
+  *       if name is readonly this code produces errors in code lines:
+  *
+  *            this.name = 'not ok';
+  *            myGreeter.name = 'also not ok';
   */
 
 class Greeter {

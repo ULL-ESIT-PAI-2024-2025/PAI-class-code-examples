@@ -1,7 +1,0 @@
-
-export let main = async () => {
-  let bibLeaf: Leaf = new Leaf();
-  bibLeaf.changeColor('fall');
-};
-
-main();
