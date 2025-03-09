@@ -21,7 +21,7 @@ class DrawingApplication {
     context.strokeRect(50, 35, 50, 50);
 
     // filled square X: 125, Y: 35, width/height 50
-    context.fillStyle = 'rgba(0, 0, 200, 0.5)';
+    context.fillStyle = 'red';
     context.fillRect(125, 35, 50, 50);
   }
 }
