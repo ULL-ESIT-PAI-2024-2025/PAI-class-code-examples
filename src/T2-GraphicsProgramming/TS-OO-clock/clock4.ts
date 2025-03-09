@@ -73,7 +73,7 @@ class Clock {
    * @param context - Canvas Drawing Context
    */
   private drawClockFace(context: CanvasRenderingContext2D): void {
-    const FILL_STYLE: string = '#333'; // For gradient (external ring)
+    const FILL_STYLE: string = 'slategray'; // For gradient (external ring)
 
     // Draw the white clock Face
     context.beginPath();
