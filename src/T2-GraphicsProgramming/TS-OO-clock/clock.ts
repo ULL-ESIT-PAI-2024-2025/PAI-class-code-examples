@@ -191,7 +191,10 @@ class Clock {
     return;
   }
 
-  /** @description Draws the clock and performs it's animation */
+  /** 
+    * @description Draws the clock and performs it's animation 
+    * Alternatively, the render method can be written as an arrow function (renderArrow)
+    */
   public render(): void {
     this.drawClockFace(this.context);
     this.drawNumbers(this.context);
@@ -202,12 +205,10 @@ class Clock {
   }
 
   /** 
-    * @description Draws the clock and performs it's animation 
-    * 
-    * Alternatively, the render method can be written as an arrow function (renderArrow)
-    * In this case the binding done in the constructor can be avoided:
-    *    this.render = this.render.bind(this);
-    */
+   * @description Draws the clock and performs it's animation 
+   * In this case (arrow function), the binding done in the constructor can be avoided:
+   *    this.render = this.render.bind(this);
+   */
   public renderArrow = (): void => {
     this.drawClockFace(this.context);
     this.drawNumbers(this.context);
