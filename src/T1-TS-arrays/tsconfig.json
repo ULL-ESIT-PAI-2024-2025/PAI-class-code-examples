@@ -15,6 +15,7 @@
     "forceConsistentCasingInFileNames": true  /* Force all file names to have the same case style. */
   },
   "files": ["arrays-mutability.ts", 
+            "array-length.ts",
             "callback.ts", 
             "double-array-values.ts", 
             "for-loops.ts", 
