@@ -12,11 +12,15 @@
  * @see {@link https://stackoverflow.com/a/40407344}
  */
 
-// Used to define the callback type
-// This could be alternatively achieved with a type definition
+/**
+  * Used to define the callback type
+  * This could be alternatively achieved with a type definition:
+  *   type Printer = (message: string) => void;
+  */
 interface Printer {
   (message: string): void;
 }
+
 
 /** @desc The callback function. Implements the Printer interface */
 function printer(message: string): void {

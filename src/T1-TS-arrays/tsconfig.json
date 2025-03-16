@@ -19,6 +19,7 @@
             "callback.ts", 
             "double-array-values.ts", 
             "for-loops.ts", 
+            "for-in.ts", 
             "slice-example.ts", 
             "slice-to-copy.ts", 
             "splice-example.ts", 
