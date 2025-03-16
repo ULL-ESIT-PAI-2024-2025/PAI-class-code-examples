@@ -35,8 +35,8 @@ export function main(): void {
   array.forEach(element => console.log(element));
   console.log(LINE);
   // for-in Not a good idea...
-  for (let i in array) {
-    console.log(array[i]);
+  for (let index in array) {
+    console.log(array[index]);
   }
 }
 
