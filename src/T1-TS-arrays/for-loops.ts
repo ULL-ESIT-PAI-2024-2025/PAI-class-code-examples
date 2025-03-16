@@ -27,12 +27,12 @@ export function main(): void {
   }
   console.log(LINE);
   // for-of PREFERRED
-  for (const component of array) {
-    console.log(component);
+  for (const element of array) {
+    console.log(element);
   }
   console.log(LINE);
   // forEach
-  array.forEach(component => console.log(component));
+  array.forEach(element => console.log(element));
   console.log(LINE);
   // for-in Not a good idea...
   for (let i in array) {
