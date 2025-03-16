@@ -7,7 +7,6 @@
     "rootDir": "./",
     "outDir": "./",
     "declaration": false,                     /* Generate (or not) .d.ts files for every TypeScript file inside your project */
-    "declaration": true,
     "alwaysStrict": true,                     /* Parse in strict mode and emit "use strict" for each source file. */
     "strict": true,                           /* Enable all strict type-checking options. */
     "noImplicitAny": true,                    /* will issue an error whenever it would have inferred any:*/ 
@@ -15,7 +14,14 @@
     "noImplicitReturns": true,                /* Report error when not all code paths in function return a value. */
     "forceConsistentCasingInFileNames": true  /* Force all file names to have the same case style. */
   },
-  "files": ["arrays-mutability.ts", "callback.ts", "double-array-values.ts", "for-loops.ts", "slice-example.ts", "slice-to-copy.ts", "splice-example.ts", "read-json-file.ts"],
+  "files": ["arrays-mutability.ts", 
+            "callback.ts", 
+            "double-array-values.ts", 
+            "for-loops.ts", 
+            "slice-example.ts", 
+            "slice-to-copy.ts", 
+            "splice-example.ts", 
+            "read-json-file.ts"],
   "exclude": [
         "node_modules",
         "build",
