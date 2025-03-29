@@ -7,6 +7,9 @@
  * @author F. de Sande
  * @since Apr 6, 2023
  * @description Present Example
+ *              Event objects
+ *              When the image is clicked, the openPresent function will be executed with 
+ *              the appropriate event object passed to it automatically by the event system. 
  */
 
 function openPresent(event: Event): void {
