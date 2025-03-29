@@ -7,6 +7,8 @@
  * @author F. de Sande
  * @since Apr 6, 2023
  * @description Present Example - changing the message in the present 2nd page
+ *              The code modifies the textContent attribute of the h1 element, 
+ *              thereby changing the title of the page.
  */
 
 function openPresent(event: Event): void {
