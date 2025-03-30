@@ -10,7 +10,7 @@
  *              Compile with tsc --target es2015 <source.ts>
  */
 
-const changeToX = function(event: Event) {
+const changeToX = function(event: Event): void {
   const X_IMAGE_URL = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/x.png';
   let container: HTMLElement = event.currentTarget as HTMLElement;
   let image = document.createElement('img');
@@ -25,7 +25,7 @@ const changeToX = function(event: Event) {
   computerChooseO();
 }
 
-const computerChooseO = function() {
+const computerChooseO = function(): void {
   const O_IMAGE_URL = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/circle.png';
   const index = Math.floor(Math.random() * freeBoxes.length);
   const freeSpace = freeBoxes[index];

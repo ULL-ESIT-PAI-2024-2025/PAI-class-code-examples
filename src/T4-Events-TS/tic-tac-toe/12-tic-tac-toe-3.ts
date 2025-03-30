@@ -17,24 +17,24 @@ const COMPUTER = 'o';
   * @desc Assigns an empty box to an owner 
   *       Registers the assignation on the takenBoxes global array
   *       Deletes the box from the freeBoxes global array
-  * @param {object} space. The HTML Element that represents the Box (it is a div)
+  * @param {object} emptyBox. The HTML Element that represents the Box (it is a div)
   * @param {string} owner It can be HUMAN or COMPUTER 
   */
-const assignSpace = function(space: HTMLElement, owner: string) {
+const assignBox = function(emptyBox: HTMLElement, owner: string) {
   const X_IMAGE_URL = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/x.png';
   const O_IMAGE_URL = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/circle.png';
   let image = document.createElement('img');
-  image.src = owner === HUMAN ? X_IMAGE_URL : O_IMAGE_URL;
-  space.appendChild(image);
+  image.src = (owner === HUMAN) ? X_IMAGE_URL : O_IMAGE_URL;
+  emptyBox.appendChild(image);
 
-  takenBoxes[space.id] = owner;
-  const indexToRemove = freeBoxes.indexOf(space);
+  takenBoxes[emptyBox.id] = owner;
+  const indexToRemove = freeBoxes.indexOf(emptyBox);
   freeBoxes.splice(indexToRemove, 1);
-  space.removeEventListener('click', changeToX);
+  emptyBox.removeEventListener('click', changeToX);
 }
 
 const changeToX = function(event: Event) {
-  assignSpace(event.currentTarget as HTMLElement, HUMAN);
+  assignBox(event.currentTarget as HTMLElement, HUMAN);
   if (isGameOver()) {
     displayWinner();
   } else {
@@ -46,7 +46,7 @@ const computerChooseO = function() {
   const index = Math.floor(Math.random() * freeBoxes.length);
   const freeSpace = freeBoxes[index];
 
-  assignSpace(freeSpace, COMPUTER);
+  assignBox(freeSpace, COMPUTER);
 
   if (isGameOver()) {
     displayWinner();
