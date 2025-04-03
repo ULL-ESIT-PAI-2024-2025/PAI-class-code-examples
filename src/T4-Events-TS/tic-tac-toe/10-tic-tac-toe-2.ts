@@ -22,20 +22,30 @@ const changeToX = function(event: Event): void {
 
 const computerChooseO = function(): void {
   const O_IMAGE_URL = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/circle.png';
-  const allBoxes  = document.querySelectorAll('#grid div');
-  const freeBoxes = [];
+  const allBoxes = document.querySelectorAll('#grid div');
+  const freeBoxes: HTMLElement[] = [];
+
   for (const box of allBoxes) {
     let imageChild = box.querySelector('img');   // Identify boxes without an img inside
     if (!imageChild) {
-      freeBoxes.push(box);
+      freeBoxes.push(box as HTMLElement);
     }
   }
+  if (freeBoxes.length === 0) {
+    console.log('El juego ha terminado - no quedan espacios vacíos');
+    return;
+  }
+
   const index = Math.floor(Math.random() * freeBoxes.length);
   const emptyBox = freeBoxes[index];
   const image = document.createElement('img');
   image.src = O_IMAGE_URL;
-  emptyBox.removeEventListener('click', changeToX);
-  emptyBox.appendChild(image);									// Include an 'O' Image in the empty box
+  if (emptyBox && typeof emptyBox.removeEventListener === 'function') {
+    emptyBox.removeEventListener('click', changeToX);
+    emptyBox.appendChild(image);                  // Include an 'O' Image in the empty box
+  } else {
+    console.error('Se seleccionó un elemento de caja inválido');
+  }
 }
 
 const main = function() {
