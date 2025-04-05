@@ -5,31 +5,29 @@
  * Programación de Aplicaciones Interactivas
  *
  * @author F. de Sande
- * @since 24.apr.2020
+ * @since Apr 24, 2020
+ *        Apr 5, 2025
  * @desc Bulma. Progress Bar
  * @see {@link https://www.w3schools.com/howto/howto_js_progressbar.asp}
- * 
+ *
  */
-
-"use strict";
-
 function move() {
-  let counter = 0;
-
-  if (counter === 0) {
-    counter = 1;
-    let elem = document.getElementById("myBar");
-    let width = 0;
-    let id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        counter = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width  + "%";
-      }
+    var counter = 0;
+    if (counter === 0) {
+        counter = 1;
+        var elem_1 = document.getElementById("myBar");
+        var width_1 = 0;
+        var id_1 = setInterval(frame, 10);
+        function frame() {
+            if (width_1 >= 100) {
+                clearInterval(id_1);
+                counter = 0;
+            }
+            else {
+                width_1++;
+                elem_1.style.width = width_1 + "%";
+                elem_1.innerHTML = width_1 + "%";
+            }
+        }
     }
-  }
 }
