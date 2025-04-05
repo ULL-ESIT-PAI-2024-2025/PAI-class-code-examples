@@ -10,11 +10,15 @@
  * @desc Bulma. Components Dropdown menu
  * @see {@link https://bulma.io/documentation/components/dropdown/}
  */
-function main() {
-    var dropdown = document.querySelector('.dropdown');
-    dropdown.addEventListener('click', function (event) {
-        event.stopPropagation();
-        dropdown.classList.toggle('is-active');
+
+function main(): void {
+  const dropdown: HTMLElement = document.querySelector('.dropdown')! as HTMLElement;
+  if (dropdown) {
+    dropdown.addEventListener('click', (event: MouseEvent) => {
+      event.stopPropagation();
+      dropdown.classList.toggle('is-active');
     });
+  }
 }
+
 main();
