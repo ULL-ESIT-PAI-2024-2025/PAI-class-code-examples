@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+// https://bulma.io/documentation/customize/with-sass/
+// 
+
 // Set your brand colors
 $purple: #57068C;
 $pink: #FA7C91;
@@ -21,7 +24,6 @@ $link: #006699;  // ULL link color
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
-
 // Update some of Bulma's component variables
 $body-background-color: $beige-lighter;
 $control-border-width: 2px;
@@ -30,7 +32,6 @@ $input-shadow: none;
 
 // Path to Bulma's sass folder
 @use "bulma/sass" with (
-//  $family-primary: '"Nunito", sans-serif',
   $family-primary: '"Argentum Sans", sans-serif',
   $grey-dark: $brown,
   $grey-light: $beige-light,
@@ -40,8 +41,5 @@ $input-shadow: none;
   $input-shadow: none
 );
 
-// Import the Google Font
-// @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-
-// Import Argentum Sans, the official typography 
+// Import Argentum Sans, the ULL official typography 
 @import url("https://fonts.cdnfonts.com/css/argentum-sans");

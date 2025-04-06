@@ -1,4 +1,9 @@
 {
+  "name": "PAI T3 Bulma",
+  "author": "F de Sande",
+  "license": "MIT",
+  "description": "To customize Bulma with Sass, you first need to install Sass. The recommended approach is to use the sass npm package",
+  "homepage": "https://bulma.io/documentation/customize/with-sass/",
   "dependencies": {
     "bulma": "^1.0.3",
     "sass": "^1.86.3"
