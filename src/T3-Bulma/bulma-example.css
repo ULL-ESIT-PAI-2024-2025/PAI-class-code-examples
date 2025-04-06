@@ -1,3 +1,13 @@
 .hero.is-primary {
   background-color: aquamarine;
 }
+
+.navbar {
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+.hero {
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
