@@ -1,7 +1,7 @@
 To build the project, execute:
 
-npm install sass
-npm install bulma
+* npm install sass
+* npm install bulma
 
 This should create the files:
 * my-ULL-bulma-project.css (The css file for your project)

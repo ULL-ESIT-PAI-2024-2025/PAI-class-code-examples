@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "bulma": "^1.0.0",
-    "sass": "^1.77.0"
+    "bulma": "^1.0.3",
+    "sass": "^1.86.3"
   },
   "scripts": {
     "build-bulma": "sass --load-path=node_modules my-ULL-bulma-project.scss my-ULL-bulma-project.css",
