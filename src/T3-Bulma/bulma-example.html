@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Features Showcase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+	  <link rel="stylesheet" href="bulma-example.css">
+    <script defer src="bulma-example.js"> </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-primary">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+               Programación de Aplicaciones Interactivas
+            </a>
+            <div class="navbar-burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#features">Features</a>
+                <a class="navbar-item" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">An example of a page Using Bulma</h1>
+                <h2 class="subtitle">A modern CSS framework based on Flexbox</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <h1 class="title">Notable Features</h1>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="title is-4">Responsive Design</h2>
+                            <p>Bulma is 100% responsive, ensuring your website looks great on all devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="title is-4">Flexbox Based</h2>
+                            <p>Built entirely with Flexbox, Bulma makes layout design intuitive and easy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="title is-4">Modular Structure</h2>
+                            <p>Import only the components you need, keeping your CSS lightweight and efficient.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h1 class="title">Get in Touch</h1>
+            <form>
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Your Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-primary">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
