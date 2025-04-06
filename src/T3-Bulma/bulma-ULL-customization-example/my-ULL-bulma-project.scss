@@ -1,15 +1,16 @@
 @charset "utf-8";
 
+// 
 // https://bulma.io/documentation/customize/with-sass/
 // 
 
 // Set your brand colors
-$purple: #57068C;
+$purple: #5C068C;
 $pink: #FA7C91;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
-$ull-purple: #57068C;
+$ull-purple: #5C068C;
 $ull-purple-invert: findColorInvert($ull-purple);
 $custom-colors: ("ull-purple": ($ull-purple, $ull-purple-invert));
 
