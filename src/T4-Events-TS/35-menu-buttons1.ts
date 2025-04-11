@@ -12,6 +12,8 @@
  *                Has an array of Buttons
  *              Button:
  *                console.log when clicked
+ *              DISCLAIMER: This code is written this way for conciseness: 
+ *                          the correct way would be to use a different file for each class.
 */
 
 /** @description Class to hold the (array of) buttons of the page */
