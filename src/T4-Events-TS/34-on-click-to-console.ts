@@ -12,10 +12,12 @@
 /**
  * @class
  * @description Class for the objects buttons to be placed in tha page
+ * @property {HTMLElement} containerElement - The The DOM element that will host the button 
+ * @property {string} text - The button text
  */
 class Button {
-  private containerElement: HTMLElement;  /** The The DOM element that will host the button */
-  private text: string = '';  /** The button text */
+  private containerElement: HTMLElement;  
+  private text: string = '';             
 
   /**
    * @constructor
