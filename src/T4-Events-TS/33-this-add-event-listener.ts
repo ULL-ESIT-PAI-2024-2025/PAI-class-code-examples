@@ -8,8 +8,7 @@
  * @since Apr 23, 2023
  * @description Events. this in addEventListener
  *              this is an implicit parameter that is passed to every JavaScript function, including functions not defined in a class!
- *              When used in an event handler, this is set to the element to which that event was added 
- *
+ *              When used in an event handler, this is bound to the DOM element on which the listener is placed (MDN)
  * @see {@link * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#As_a_DOM_event_handler}
  */
 
