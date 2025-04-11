@@ -16,6 +16,7 @@
  *       due to the nature of the method used (such as querySelector).
  *       
  * @see {@link https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator}
+ * @see {https://medium.com/@bobjunior542/how-to-use-the-operator-in-typescript-for-cleaner-more-efficient-code-7fd528f8f8b1}
  * @see HTML Event Handling in TypeScript {@link https://medium.com/geekculture/html-event-handling-in-typescript-b9ca7178d912}
  */
 
