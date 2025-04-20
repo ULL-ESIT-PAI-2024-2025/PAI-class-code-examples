@@ -41,8 +41,8 @@ class Present {
 }
 
 function main(): void {
-  const containerElement: HTMLElement = document.querySelector('#presents');
-  const present = new Present(containerElement);
+  const containerElement: HTMLElement = document.querySelector('#presents')! as HTMLElement;
+  const present: Present = new Present(containerElement);
 }
 
 main();
