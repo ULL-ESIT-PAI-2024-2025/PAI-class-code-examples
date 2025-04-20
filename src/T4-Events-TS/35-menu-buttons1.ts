@@ -56,4 +56,8 @@ class Button {
   }
 }
 
-const menu = new Menu();   // When the page loads we create the Menu
+function main(): void {
+  const menu: Menu = new Menu();
+}
+
+main();
