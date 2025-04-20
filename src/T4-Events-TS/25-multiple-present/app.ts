@@ -38,8 +38,8 @@ export class App {
    * @description Creates the Present objects and stores them in the presents array 
    */
   private fillPresentContainer(): void {
-    for (const source of PRESENT_SOURCES) {
-      const present = new Present(this.presentContainer, source);
+    for (const url of PRESENT_SOURCES) {
+      const present: Present = new Present(this.presentContainer, url);
       this.presents.push(present);
     }
   }
