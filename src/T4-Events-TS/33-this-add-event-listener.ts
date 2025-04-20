@@ -22,7 +22,7 @@ function onClick(): void {
 }
 
 function main(): void {
-  const button: HTMLButtonElement = document.querySelector('button');
+  const button: HTMLButtonElement = document.querySelector('button')! as HTMLButtonElement;
   button.addEventListener('click', onClick);
 }
 

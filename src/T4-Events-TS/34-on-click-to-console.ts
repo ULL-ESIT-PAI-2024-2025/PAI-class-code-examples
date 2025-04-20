@@ -52,7 +52,7 @@ class Button {
    *              Implemented as an arrow function
    *              Using this version we don't need the bind statement in the constructor
    */
-  private onClick1 = (): void => {
+  private onClickArrow = (): void => {
     console.log('Arrow clicked: ' + this.text);
   }
 }
