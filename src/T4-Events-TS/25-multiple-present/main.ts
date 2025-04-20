@@ -22,8 +22,8 @@
 import {App} from './app.js';
 
 function main(): void {
-  const presentContainer: HTMLElement = document.querySelector('#presents') as HTMLElement;
-  const titleContainer: HTMLElement = document.querySelector('#title') as HTMLElement;
+  const presentContainer: HTMLElement = document.querySelector('#presents')! as HTMLElement;
+  const titleContainer: HTMLElement = document.querySelector('#title')! as HTMLElement;
   const app = new App(presentContainer, titleContainer);
 }
 
