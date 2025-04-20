@@ -76,4 +76,8 @@ class Button {
   }
 }
 
-const menu = new Menu();
+function main(): void {
+  const menu: Menu = new Menu();
+}
+
+main();
