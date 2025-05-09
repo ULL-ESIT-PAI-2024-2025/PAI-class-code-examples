@@ -27,7 +27,7 @@
     "lodash": "^4.17.21",
     "markdown-it": "^12.0.6",
     "markdown-it-anchor": "^7.1.0",
-    "marked": "^2.0.6",
+    "marked": "^4.0.12",
     "mdurl": "^1.0.1",
     "mkdirp": "^1.0.4",
     "requizzle": "^0.2.3",
