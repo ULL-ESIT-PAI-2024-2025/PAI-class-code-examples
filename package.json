@@ -20,7 +20,7 @@
     "catharsis": "^0.9.0",
     "entities": "^2.2.0",
     "escape-string-regexp": "^2.0.0",
-    "graceful-fs": "^4.2.6",
+    "graceful-fs": "^4.2.10",
     "js2xmlparser": "^4.0.1",
     "klaw": "^3.0.0",
     "linkify-it": "^2.2.0",
