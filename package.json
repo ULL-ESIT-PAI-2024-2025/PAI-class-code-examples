@@ -2,7 +2,7 @@
   "devDependencies": {
     "eslint": "^8.11.0",
     "eslint-config-google": "^0.14.0",
-    "jsdoc": "^3.6.6"
+    "jsdoc": "^4.0.0"
   },
   "name": "classcode-examples-repo",
   "description": "This directory is organised as follows:",
